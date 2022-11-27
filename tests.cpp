@@ -34,3 +34,8 @@ TEST_CASE("capacity") {
   }
   CHECK_EQ(vec1.capacity(), 20);
 }
+
+TEST_CASE("empty") {
+  auto vec1 = MyVector<char>();
+  CHECK(vec1.empty());
+}

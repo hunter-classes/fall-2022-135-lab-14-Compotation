@@ -19,6 +19,8 @@ public:
   size_t size();
 
   size_t capacity();
+
+  bool empty();
 };
 
 #include "MyVector.tcc"

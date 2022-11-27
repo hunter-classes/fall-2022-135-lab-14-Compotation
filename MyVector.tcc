@@ -1,6 +1,3 @@
-
-#include "MyVector.h"
-
 template<typename T>
 MyVector<T>::MyVector() {
   maxSize = 10;
@@ -37,4 +34,9 @@ size_t MyVector<T>::size() {
 template<typename T>
 size_t MyVector<T>::capacity() {
   return maxSize;
+}
+
+template<typename T>
+bool MyVector<T>::empty() {
+  return size() == 0;
 }
