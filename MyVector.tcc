@@ -45,3 +45,8 @@ template<typename T>
 void MyVector<T>::pop_back(size_t n) {
   numItems -= n;
 }
+
+template<typename T>
+void MyVector<T>::pop_back() {
+  numItems--;
+}
