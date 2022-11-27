@@ -12,3 +12,16 @@ TEST_CASE("pushing back") {
     CHECK_EQ(vec[i], element);
   }
 }
+
+TEST_CASE("size") {
+  auto vec1 = MyVector<int>();
+  CHECK_EQ(vec1.size(), 0);
+  vec1.push_back(15);
+  vec1.push_back(15);
+  CHECK_EQ(vec1.size(), 2);
+
+  for (int i = 0; i < 25; i++) {
+    vec1.push_back(i);
+  }
+  CHECK_EQ(vec1.size(), 27);
+}
