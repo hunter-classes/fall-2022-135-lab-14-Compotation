@@ -40,3 +40,8 @@ template<typename T>
 bool MyVector<T>::empty() {
   return size() == 0;
 }
+
+template<typename T>
+void MyVector<T>::pop_back(size_t n) {
+  numItems -= n;
+}

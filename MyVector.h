@@ -21,6 +21,8 @@ public:
   size_t capacity();
 
   bool empty();
+
+  void pop_back(size_t n);
 };
 
 #include "MyVector.tcc"

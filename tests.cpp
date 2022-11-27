@@ -39,3 +39,11 @@ TEST_CASE("empty") {
   auto vec1 = MyVector<char>();
   CHECK(vec1.empty());
 }
+
+TEST_CASE("pop back n") {
+  auto vec1 = MyVector<char>();
+  vec1.push_back(2);
+  vec1.push_back(2);
+  vec1.pop_back(2);
+  CHECK_EQ(vec1.size(), 0);
+}
