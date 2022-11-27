@@ -11,7 +11,7 @@ void MyVector<T>::push_back(T item) {
     // copy to new array with size maxSize + 10
     maxSize += 10;
     T *newArr = new T[maxSize];
-    for (int i = 0; i < numItems; i++) {
+    for (size_t i = 0; i < numItems; i++) {
       newArr[i] = arr[i];
     }
     arr = newArr;
