@@ -17,6 +17,8 @@ public:
   T &operator[](size_t i);
 
   size_t size();
+
+  size_t capacity();
 };
 
 #include "MyVector.tcc"

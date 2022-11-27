@@ -25,3 +25,12 @@ TEST_CASE("size") {
   }
   CHECK_EQ(vec1.size(), 27);
 }
+
+TEST_CASE("capacity") {
+  auto vec1 = MyVector<char>();
+  CHECK_EQ(vec1.capacity(), 10);
+  for (int i = 0; i < 11; i++) {
+    vec1.push_back(static_cast<char>(i));
+  }
+  CHECK_EQ(vec1.capacity(), 20);
+}

@@ -1,3 +1,6 @@
+
+#include "MyVector.h"
+
 template<typename T>
 MyVector<T>::MyVector() {
   maxSize = 10;
@@ -29,4 +32,9 @@ T &MyVector<T>::operator[](size_t i) {
 template<typename T>
 size_t MyVector<T>::size() {
   return numItems;
+}
+
+template<typename T>
+size_t MyVector<T>::capacity() {
+  return maxSize;
 }
