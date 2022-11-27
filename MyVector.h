@@ -25,6 +25,8 @@ public:
   void pop_back(size_t n);
 
   void pop_back();
+
+  void clear();
 };
 
 #include "MyVector.tcc"

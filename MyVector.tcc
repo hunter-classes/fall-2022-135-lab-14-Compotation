@@ -50,3 +50,8 @@ template<typename T>
 void MyVector<T>::pop_back() {
   numItems--;
 }
+
+template<typename T>
+void MyVector<T>::clear() {
+  numItems = 0;
+}

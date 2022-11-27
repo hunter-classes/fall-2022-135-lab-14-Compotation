@@ -54,3 +54,17 @@ TEST_CASE("pop back 1") {
   vec1.pop_back();
   CHECK(vec1.empty());
 }
+
+TEST_CASE("clear") {
+  auto vec1 = MyVector<char>();
+  vec1.push_back(5);
+  vec1.clear();
+  CHECK(vec1.empty());
+
+  auto vec2 = MyVector<int>();
+  for (int i = 0; i < 25; i++) {
+    vec2.push_back(i);
+  }
+  vec2.clear();
+  CHECK(vec2.empty());
+}
