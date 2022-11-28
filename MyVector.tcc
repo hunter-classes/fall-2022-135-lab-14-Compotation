@@ -14,6 +14,7 @@ void MyVector<T>::push_back(T item) {
     for (size_t i = 0; i < numItems; i++) {
       newArr[i] = arr[i];
     }
+    delete[] arr;
     arr = newArr;
   }
 
@@ -22,36 +23,22 @@ void MyVector<T>::push_back(T item) {
 }
 
 template<typename T>
-T &MyVector<T>::operator[](size_t i) {
-  return arr[i];
-}
+T &MyVector<T>::operator[](size_t i) { return arr[i]; }
 
 template<typename T>
-size_t MyVector<T>::size() {
-  return numItems;
-}
+size_t MyVector<T>::size() { return numItems; }
 
 template<typename T>
-size_t MyVector<T>::capacity() {
-  return maxSize;
-}
+size_t MyVector<T>::capacity() { return maxSize; }
 
 template<typename T>
-bool MyVector<T>::empty() {
-  return size() == 0;
-}
+bool MyVector<T>::empty() { return size() == 0; }
 
 template<typename T>
-void MyVector<T>::pop_back(size_t n) {
-  numItems -= n;
-}
+void MyVector<T>::pop_back(size_t n) { numItems -= n; }
 
 template<typename T>
-void MyVector<T>::pop_back() {
-  numItems--;
-}
+void MyVector<T>::pop_back() { numItems--; }
 
 template<typename T>
-void MyVector<T>::clear() {
-  numItems = 0;
-}
+void MyVector<T>::clear() { numItems = 0; }
