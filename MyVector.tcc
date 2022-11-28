@@ -1,3 +1,5 @@
+#pragma once
+
 template<typename T>
 MyVector<T>::MyVector() {
   maxSize = 10;
